@@ -3,7 +3,7 @@ import time
 
 rm=pyvisa.ResourceManager()
 rm.list_resources()
-my_instrument = rm.open_resource('USB0::0X0699::0x0353::1725542::0::INSTR')
+my_instrument = rm.open_resource('USB0::0X0699::0x0353::1725542::0::INSTR') #inserta el codigo de tu instrumento
 print(my_instrument.query('*IDN?'))
 
 for i in range (5,11,1):
